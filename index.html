@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rama Krishna Mohanty — bioinformatics portfolio featuring RNA-seq analysis, WGS/WES variant workflows, and reproducible computational biology projects.">
+  <meta name="theme-color" content="#f6f2e9">
+  <title>Rama Krishna Mohanty | Bioinformatics & Genomics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+    } catch (_) {
+      document.documentElement.dataset.theme = 'light';
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Rama Krishna Mohanty home"><span class="brand-dot"></span> RAMA KRISHNA</a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-home" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="nav-contact" href="#contact">Contact <span>↗</span></a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-approved" id="home">
+      <div class="hero-inner">
+        <p class="eyebrow">BIOINFORMATICS <i>·</i> COMPUTATIONAL BIOLOGY</p>
+        <h1>Rama Krishna<br><em>Mohanty<span class="hero-period">.</span></em></h1>
+        <p class="hero-role">Turning biological data into meaningful insight.</p>
+        <p class="hero-copy">I am a microbiology postgraduate working at the intersection of biology, sequencing technologies and computational analysis. I enjoy making complex biological datasets easier to understand through reproducible workflows and clear interpretation.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="text-link" href="#contact">Contact me <span>↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-art" aria-hidden="true">
+        <img class="hero-visual" src="assets/hero-science.png" alt="">
+      </aside>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-label"><span>01</span><span class="label-line"></span><span>ABOUT</span></div>
+      <div class="about-grid">
+        <div class="section-heading">
+          <p class="overline">BIOLOGY MEETS COMPUTATION</p>
+          <h2>Curious about biology.<br><em>Driven by data.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">My foundation is in microbiology, with growing hands-on experience in bioinformatics and next-generation sequencing analysis.</p>
+          <p>I have explored genomic and transcriptomic workflows, read quality assessment, alignment, gene-level quantification, differential expression analysis and germline variant-calling workflows. I enjoy understanding not only how an analysis is run, but also what its outputs can—and cannot—tell us.</p>
+          <p>This portfolio highlights selected projects from my GitHub, with a focus on the questions, workflows, analytical outputs and tools behind each one.</p>
+          <div class="tag-list"><span>Reproducible workflows</span><span>NGS data analysis</span><span>Biological interpretation</span><span>Continuous learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise-section" id="expertise">
+      <div class="section-label"><span>02</span><span class="label-line"></span><span>EXPERTISE</span></div>
+      <div class="section-intro-row">
+        <div class="section-heading">
+          <p class="overline">TOOLS, METHODS & INTERESTS</p>
+          <h2>My working <em>toolkit.</em></h2>
+        </div>
+        <p class="section-intro">A practical toolkit built through project work, training and continued exploration of biological datasets.</p>
+      </div>
+      <div class="expertise-grid">
+        <article class="expertise-card">
+          <div class="card-index">01 <span>TRANSCRIPTOMICS</span></div>
+          <h3>RNA-seq analysis</h3>
+          <p>Read QC, alignment, quantification, differential expression, exploratory analysis and pathway-level interpretation.</p>
+          <div class="tool-list">FastQC · MultiQC · HISAT2 · featureCounts · DESeq2 · fgsea</div>
+        </article>
+        <article class="expertise-card">
+          <div class="card-index">02 <span>GENOMICS</span></div>
+          <h3>WGS / WES workflows</h3>
+          <p>Germline variant workflow concepts covering read processing, alignment, recalibration, variant calling and filtering.</p>
+          <div class="tool-list">BWA-MEM · GATK · SAMtools · bcftools · mosdepth</div>
+        </article>
+        <article class="expertise-card">
+          <div class="card-index">03 <span>COMPUTATION</span></div>
+          <h3>Programming & analysis</h3>
+          <p>Using scripts and data-analysis tools to organize biological data, automate steps and communicate results.</p>
+          <div class="tool-list">R · Python · Linux · Bash · pandas · ggplot2</div>
+        </article>
+        <article class="expertise-card">
+          <div class="card-index">04 <span>REPRODUCIBILITY</span></div>
+          <h3>Workflow management</h3>
+          <p>Structured, documented workflows with configuration files, software environments and version control.</p>
+          <div class="tool-list">Snakemake · Conda · Git · GitHub · MultiQC</div>
+        </article>
+      </div>
+      <p class="fine-print">Tools listed reflect project use, training or practical exposure; proficiency varies by tool and workflow.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-label"><span>03</span><span class="label-line"></span><span>SELECTED PROJECTS</span></div>
+      <div class="section-intro-row project-intro-row">
+        <div class="section-heading">
+          <p class="overline">RESEARCH QUESTIONS → WORKFLOWS → OUTPUTS</p>
+          <h2>Projects in <em>focus.</em></h2>
+        </div>
+        <p class="section-intro">A closer look at selected repositories, including the biological context, analysis steps and outputs documented in each project.</p>
+      </div>
+
+      <article class="case-study case-study-wgs">
+        <div class="case-header">
+          <div><span class="case-number">PROJECT 01 / FEATURED</span><span class="case-domain">GENOMICS · WORKFLOW ENGINEERING</span></div>
+          <a class="repo-link" href="https://github.com/Rama1752/Snakemake-WGS-WES-Germline-Pipeline" target="_blank" rel="noreferrer">Open repository <span>↗</span></a>
+        </div>
+        <div class="wgs-grid">
+          <div class="case-copy">
+            <h3>Reproducible WGS / WES germline variant-calling pipeline</h3>
+            <p class="case-lead">A configurable Snakemake workflow designed to take paired-end sequencing reads through processing and germline variant calling to filtered VCF outputs.</p>
+            <div class="case-subsection">
+              <h4>Pipeline structure</h4>
+              <p>FastQC and fastp quality checks and trimming, BWA-MEM alignment, duplicate marking, base quality score recalibration, GATK HaplotypeCaller, genotyping and hard filtering.</p>
+            </div>
+            <div class="case-subsection">
+              <h4>Reproducibility and outputs</h4>
+              <p>WGS or WES mode is selected through configuration. The repository documents environment files, sample-sheet inputs, per-sample workflow outputs, mosdepth coverage summaries and MultiQC reports.</p>
+            </div>
+            <div class="tag-list case-tags"><span>Snakemake</span><span>GATK</span><span>BWA-MEM</span><span>FastQC</span><span>fastp</span><span>bcftools</span></div>
+          </div>
+          <figure class="workflow-figure">
+            <a href="https://github.com/Rama1752/Snakemake-WGS-WES-Germline-Pipeline/blob/main/dag.svg" target="_blank" rel="noreferrer" aria-label="Open Snakemake workflow DAG in GitHub">
+              <img src="https://raw.githubusercontent.com/Rama1752/Snakemake-WGS-WES-Germline-Pipeline/main/dag.svg" alt="Snakemake directed acyclic graph showing the workflow steps for germline variant calling" loading="lazy">
+            </a>
+            <figcaption><strong>Snakemake workflow DAG</strong><span>Workflow structure from the repository · Open on GitHub ↗</span></figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="case-study case-study-rna">
+        <div class="case-header">
+          <div><span class="case-number">PROJECT 02 / FEATURED</span><span class="case-domain">TRANSCRIPTOMICS · DIFFERENTIAL EXPRESSION</span></div>
+          <a class="repo-link" href="https://github.com/Rama1752/Bulk-RNA-Seq-Analysis" target="_blank" rel="noreferrer">Open repository <span>↗</span></a>
+        </div>
+        <div class="case-main">
+          <div class="case-copy">
+            <h3>Bulk RNA-seq analysis of inflammatory response</h3>
+            <p class="case-lead">Exploring how IL-1β-associated inflammation changes gene expression in human chondrocytes, and how cyproheptadine treatment relates to those expression patterns.</p>
+            <div class="case-subsection">
+              <h4>Research context</h4>
+              <p>The project uses the public GEO dataset <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291878" target="_blank" rel="noreferrer">GSE291878</a>, with four conditions: DMSO control, cyproheptadine, IL-1β and combined cyproheptadine + IL-1β treatment (five samples per condition, as described in the repository).</p>
+            </div>
+            <div class="case-subsection">
+              <h4>Workflow explored</h4>
+              <p>Raw SRA data preparation, FastQC and MultiQC quality checks, optional read trimming, HISAT2 alignment to GRCh38, SAMtools processing, alignment quality checks, feature counting, DESeq2 analysis and Hallmark pathway enrichment.</p>
+            </div>
+            <div class="case-subsection">
+              <h4>Analysis outputs</h4>
+              <p>Principal component analysis, sample-distance and variable-gene heatmaps, volcano plots, gene-level comparisons and GSEA enrichment visualizations.</p>
+            </div>
+            <div class="tag-list case-tags"><span>R</span><span>DESeq2</span><span>Bioconductor</span><span>HISAT2</span><span>featureCounts</span><span>fgsea</span></div>
+          </div>
+          <div class="case-visual">
+            <figure class="main-figure">
+              <a href="https://raw.githubusercontent.com/Rama1752/Bulk-RNA-Seq-Analysis/main/Plots/Volcano_plot_IL1b_vs_Control.png" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/Rama1752/Bulk-RNA-Seq-Analysis/main/Plots/Volcano_plot_IL1b_vs_Control.png" alt="Repository volcano plot comparing IL-1 beta treated samples with control samples" loading="lazy">
+              </a>
+              <figcaption><strong>Volcano plot</strong><span>IL-1β vs control · Open original figure ↗</span></figcaption>
+            </figure>
+            <div class="mini-figures">
+              <figure>
+                <a href="https://raw.githubusercontent.com/Rama1752/Bulk-RNA-Seq-Analysis/main/Plots/Distance_Heatmap.png" target="_blank" rel="noreferrer">
+                  <img src="https://raw.githubusercontent.com/Rama1752/Bulk-RNA-Seq-Analysis/main/Plots/Distance_Heatmap.png" alt="Sample-to-sample distance heatmap from the RNA-seq analysis" loading="lazy">
+                </a>
+                <figcaption>Sample distance</figcaption>
+              </figure>
+              <figure>
+                <a href="https://raw.githubusercontent.com/Rama1752/Bulk-RNA-Seq-Analysis/main/Plots/variable_gene_Heatmap.png" target="_blank" rel="noreferrer">
+                  <img src="https://raw.githubusercontent.com/Rama1752/Bulk-RNA-Seq-Analysis/main/Plots/variable_gene_Heatmap.png" alt="Heatmap of the top 40 variable genes across the RNA-seq conditions" loading="lazy">
+                </a>
+                <figcaption>Variable genes</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="case-note"><span class="note-mark">i</span><p><strong>How to read this project:</strong> the figures are analytical outputs from the repository. The portfolio describes the analysis performed and does not present these exploratory results as clinical evidence or proof of treatment efficacy.</p></div>
+      </article>
+
+      <div class="more-projects-heading">
+        <div><p class="overline">MORE FROM GITHUB</p><h3>Additional workflow projects.</h3></div>
+        <a class="text-link" href="https://github.com/Rama1752?tab=repositories" target="_blank" rel="noreferrer">All repositories ↗</a>
+      </div>
+      <div class="more-projects-grid">
+        <article class="small-project">
+          <div class="small-project-top"><span>03 / RNA-seq PREPROCESSING</span><span>↗</span></div>
+          <h4>Raw data to feature counts</h4>
+          <p>A step-by-step preprocessing tutorial following SRA data through FastQC, MultiQC, HISAT2 alignment, alignment checks and featureCounts. Uses the LCOR overexpression dataset in MCF7 and MDA-MB-231 cell lines.</p>
+          <p class="project-caveat">The repository notes that this dataset has no biological replicates; it is presented here as a preprocessing workflow exercise, not as a robust differential-expression study.</p>
+          <div class="tag-list"><span>SRA Toolkit</span><span>FastQC</span><span>HISAT2</span><span>featureCounts</span></div>
+          <a class="small-project-link" href="https://github.com/Rama1752/Bulk-RNA-Seq-Analysis-Raw-Data-to-Feature-Counts" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+        <article class="small-project">
+          <div class="small-project-top"><span>04 / WHOLE-GENOME SEQUENCING</span><span>↗</span></div>
+          <h4>WGS germline variant-calling workflow</h4>
+          <p>A documented single-sample workflow using public HG00096 data from the 1000 Genomes Project. The repository describes read QC, BWA alignment, GATK duplicate marking and BQSR, HaplotypeCaller, SNP/INDEL filtering and functional annotation.</p>
+          <div class="tag-list"><span>HG38 / GRCh38</span><span>BWA</span><span>GATK</span><span>Funcotator</span></div>
+          <a class="small-project-link" href="https://github.com/Rama1752/Whole-Genome-Sequencing-WGS-Germline-Variant-Calling-Pipeline" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-label"><span>04</span><span class="label-line"></span><span>EXPERIENCE</span></div>
+      <div class="section-intro-row">
+        <div class="section-heading"><p class="overline">LEARNING THROUGH PRACTICE</p><h2>Professional <em>experience.</em></h2></div>
+        <p class="section-intro">A path from microbiology laboratory practice toward computational analysis and genome informatics.</p>
+      </div>
+      <div class="timeline">
+        <p class="timeline-group-label">BIOINFORMATICS EXPERIENCE</p>
+        <article class="timeline-item">
+          <div class="timeline-date">2026 — PRESENT</div>
+          <div class="timeline-body"><h3>Junior Scientific Analyst – Genome Informatics</h3><p class="timeline-org">Genotypic Technology <span>·</span> Bengaluru, India</p><p>Currently working in a bioinformatics-focused genome informatics role, applying computational approaches to biological and genomic data.</p><div class="tag-list"><span>Bioinformatics</span><span>Genome informatics</span><span>Scientific analysis</span></div></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">FEB 2026 — NOV 2026</div>
+          <div class="timeline-body"><h3>Trainee Bioinformatician</h3><p class="timeline-org">GeneInsight Informatics Pvt. Ltd. <span>·</span> Hyderabad, India</p><p>Worked with NGS analysis workflows across WGS, WES and RNA-seq, including quality control, alignment, quantification, variant annotation and biological interpretation.</p><div class="tag-list"><span>NGS analysis</span><span>WGS / WES</span><span>RNA-seq</span></div></div>
+        </article>
+
+        <p class="timeline-group-label timeline-group-secondary">EARLIER LABORATORY EXPERIENCE</p>
+        <article class="timeline-item">
+          <div class="timeline-date">MAR 2025 — NOV 2025</div>
+          <div class="timeline-body"><h3>Laboratory Technician</h3><p class="timeline-org">NeuroEquilibrium Diagnostic Systems Pvt. Ltd. <span>·</span> Visakhapatnam, India</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">APR 2023 — APR 2024</div>
+          <div class="timeline-body"><h3>QA/QC Intern</h3><p class="timeline-org">Unichem Laboratories Limited</p><p>Earlier quality-control experience supporting a foundation in microbiology and laboratory practice.</p><div class="tag-list"><span>Microbiology</span><span>Quality control</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="section-label"><span>05</span><span class="label-line"></span><span>EDUCATION</span></div>
+      <div class="section-heading"><p class="overline">ACADEMIC FOUNDATION</p><h2>Education & <em>qualifications.</em></h2></div>
+      <div class="education-grid">
+        <article class="education-card"><span class="education-year">2022 — 2024</span><h3>M.Sc. Microbiology (Hons.)</h3><p>Lovely Professional University</p><span class="education-score">7.6 <small>/ 10 CGPA</small></span></article>
+        <article class="education-card"><span class="education-year">2019 — 2022</span><h3>B.Sc. Microbiology, Biotechnology & Chemistry</h3><p>Andhra University</p><span class="education-score">7.6 <small>/ 10 CGPA</small></span></article>
+      </div>
+      <div class="credentials">
+        <p class="overline">QUALIFICATIONS</p>
+        <div class="credential-row"><strong>CSIR-UGC NET</strong><span>Life Sciences · 2025 · AIR 43 · Category 2</span></div>
+        <div class="credential-row"><strong>GATE</strong><span>Life Sciences (XL) · 2025 · Qualified</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div class="section-label"><span>06</span><span class="label-line"></span><span>CONTACT</span></div>
+        <p class="overline">LET'S CONNECT</p>
+        <h2>Open to learning.<br><em>Ready to collaborate.</em></h2>
+        <p class="contact-copy">Interested in bioinformatics, genomics, transcriptomics and computational biology. Connect with me to discuss scientific projects, ideas and opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL@example.com" class="contact-card"><span>EMAIL</span><strong>Email me</strong><i>↗</i></a>
+          <a href="https://github.com/Rama1752" target="_blank" rel="noreferrer" class="contact-card"><span>CODE & PROJECTS</span><strong>GitHub</strong><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/rama-krishna-mohanty-427953249/" target="_blank" rel="noreferrer" class="contact-card"><span>PROFESSIONAL NETWORK</span><strong>LinkedIn</strong><i>↗</i></a>
+        </div>
+        <footer><span>© <span id="year"></span> Rama Krishna Mohanty</span><span>Bioinformatics · Genomics · Computational Biology</span><a href="#home">Back to top ↑</a></footer>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
